@@ -1,4 +1,4 @@
-puts "Creando categorias..."
+puts "Seeding the database..."
 
 while Category.count < 10
     if !Category.pluck(:name).include?(Faker::Game.genre)
